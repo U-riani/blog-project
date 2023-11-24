@@ -1,13 +1,146 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  width: 100%;
+}
+
+.navbar {
+  width: 100%;
+  height: 40px;
+  padding-top: 5px;
+}
+
+nav {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.nav-2 {
+  width: 60%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 4%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar-link {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-link-1 {
+  color: rgba(0, 0, 0, 0.883);
+}
+
+.navbar-link-2 {
+  width: 20%;
+  background-color: rgba(249, 60, 60, 0.848);
+  border-radius: 10px;
+  padding: 0 10px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+}
+
+
+.content {
+  padding: 4%;
+}
+
+.blog {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+}
+
+.blog:hover{
+  box-shadow: 1px 1px  20px 1px rgb(232, 198, 198);
+}
+
+.blog a {
+  margin: auto 0;
+}
+
+.blog a h3{
+  color: rgb(243, 101, 101);
+}
+
+.author {
+  color:rgb(242, 98, 14)
+}
+
+article {
+  width: 100%;
+}
+
+article h2, article p{
+  margin-bottom: 10px;
+}
+
+.written-by {
+  font-size: 13px;
+}
+
+.blog-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-body p{
+  column-count: 2;
+  column-rule: 1px solid grey;
+}
+
+.body-paragraph{
+  text-align: justify;
+  overflow-wrap: break-word;
+}
+
+.delete-add-button {
+  width: fit-content;
+  margin-top: 20px;
+  padding: 5px 10px;
+  border: 0;
+  border-radius: 10px;
+  background-color: rgb(243, 101, 101);
+  color: rgb(252, 252, 252);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.create {
+  margin-bottom: 10px;
+  padding: 2px;
+}
+
+.create-body {
+  width: 100%;
+  height: fit-content;
+  padding: 2px 4px;
 }
